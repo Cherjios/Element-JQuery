@@ -26,7 +26,8 @@
         For example, if you want to create a simple header “Hello word” on your HTML document, you will use the <h1> tag as fallow.
     </p>
     <p> 
-        <h1>"Hello Wordl!</h1>
+        &lt;h1&gt;"Hello World"&lt;/h1&gt;
+        
     </p>
     <p>
         This instruction will create a “Hello world” on your browser and every time you reload or refresh your website this header is going to show up. However this header is going to be there all the time and sometimes we do not need that, here is when jQuery or JavaScript comes in handy.
@@ -35,7 +36,8 @@
         In order to create an element for example: <h1> “Hello world!” </h1> on JavaScript we need to fallow the next instructions:
     </p>
     <p>
-    <!--var h1Element = $("<h1>").text("Hello World");  -->
+        <code>var h1Element = $("&lt;h1&gt;").text("Hello World");</code>
+
     </p>
     <p>
         Now that we have created this element, we need to append it to another element in the HTML document to be able to show it on the browser. To append it we can use the JavaScript method append() or prepend().
@@ -47,7 +49,7 @@
         prepend(). Will add the element at the beginning.
     </p>
     <p>
-        For example: Let’s say we have a <div id=”headerText”>…</div> in our HTML file and we want to add the “Hello world” to our document.
+        For example: Let’s say we have a <code>&lt;div id="headerText"&gt;...&lt;/div&gt;</code> in our HTML file and we want to add the “Hello world” to our document.
     </p>
 
     <p>
@@ -74,7 +76,7 @@
     </p>
 
     <p>
-        Now Let’s add a <p> This is me </p> after <h1>…</h1>
+        Now Let’s add a <code>&lt;p&gt;This is me&lt;/p&gt;</code> after <h1>…</h1>
     </p>
     <p>
         image code example header
@@ -90,7 +92,47 @@
     <p>
         image Hello World  this is me, here
     </p>
+    <p>
+        This will be our code reflected on a HTML file:
+    </p>
+    <p>
+        image of the code 
+    </p>
+    <p>
+        Now let’s create another paragraph with the text “Before this is me” prepended in id=”headerText”,
+    </p>
 
-    
+    <p>
+        image of code
+    </p>
+    <p>
+        Once again, in the first line, we are creating a variable p2Element with the instruction:<code>$("&amp;lt;p&amp;gt;")</code> next with .text(“Before this is me”); we add the text required. 
+        On the second line, we are referring the new element to the element that we want to prepend, so we are giving the instruction to the id #headerText we are prepending the p2Element.
+    </p>
+    <p>
+        This will be the result on the browser:
+    </p>
+    <p>
+        Before this is me Hello Wordl  this is me
+    </p>
+    <p>
+        his will be our code reflected on an HTML file:
+    </p>
+    <p>
+        image of code 
+    </p>
+
+    <p>
+        In this case “Before this is me” prepended on id=” HeaderText” after comes “Hello world” and at the end “This is me”.
+    </p>
+<p>
+    n conclusion, we can create and add elements to our HTML file with jQuery in our JavaScript file only having the reference of one element on the HTML document.
+</p>
+<p>
+    If this reading was helpful and you liked it, please follow me!
+</p>
+<p>
+    Thanks for reading.
+</p>
 </body>
 </html>
