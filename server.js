@@ -21,5 +21,3 @@ app.get("/", function (req, res) {
 app.listen(PORT, function () {
     console.log("App now listening at localhost:" + PORT);
   });
-
-  //run npm init, npm install express

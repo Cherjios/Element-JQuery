@@ -7,6 +7,90 @@
     <title>Element JQuery</title>
 </head>
 <body>
-    <h1>This is a test</h1>
+    <h1>How to create an element on html with jQuery?</h1>
+
+    <p>
+        Image here
+    </p>
+
+    <p>
+        First of all, let me describe what exactly is jQuery.
+    </p>
+    <p>
+        According to the website <a href="https://jquery.com/"> https://jquery.com </a> is a JavaScript library that makes it easier to manipulate HTML documents, use animation, and a much simple way to use Ajax to get data from APIs, so in other words simplify the way to write on JavaScript.
+    </p>
+    <p>
+        To create an element on an HTML document with jQuery we need the use the dollar symbol to refer to the HTML element we want to create on our HTML file.
+    </p>
+    <p>
+        For example, if you want to create a simple header “Hello word” on your HTML document, you will use the <h1> tag as fallow.
+    </p>
+    <p> 
+        <h1>"Hello Wordl!</h1>
+    </p>
+    <p>
+        This instruction will create a “Hello world” on your browser and every time you reload or refresh your website this header is going to show up. However this header is going to be there all the time and sometimes we do not need that, here is when jQuery or JavaScript comes in handy.
+    </p>
+    <p>
+        In order to create an element for example: <h1> “Hello world!” </h1> on JavaScript we need to fallow the next instructions:
+    </p>
+    <p>
+    <!--var h1Element = $("<h1>").text("Hello World");  -->
+    </p>
+    <p>
+        Now that we have created this element, we need to append it to another element in the HTML document to be able to show it on the browser. To append it we can use the JavaScript method append() or prepend().
+    </p>
+    <p>
+        append(). Will add the element at the end.
+    </p>
+    <p>
+        prepend(). Will add the element at the beginning.
+    </p>
+    <p>
+        For example: Let’s say we have a <div id=”headerText”>…</div> in our HTML file and we want to add the “Hello world” to our document.
+    </p>
+
+    <p>
+        We need to make reference to the element, class, or id where we want to add the new element by calling the dollar symbol first, then the address element where we are putting the new element followed by the dot (.) and the method that we want to use( append if we want the element at the end or prepend if we want the element at the beginning).
+    </p>
+
+    <p>
+        $(“#headerText”).append(h1Element);
+    </p>
+
+    <p>
+        $(“#headerText”).prepend(h1Element);
+    </p>
+
+    <p>
+        o, our HTML document being opened on the browser will show us the next code:
+    </p>
+    
+    <p>
+    “Hello, World” and if we inspect the element in our console we will see as follow:
+    </p>
+    <p>
+        image here
+    </p>
+
+    <p>
+        Now Let’s add a <p> This is me </p> after <h1>…</h1>
+    </p>
+    <p>
+        image code example header
+    </p>
+
+    <p>
+        n the first line, we are creating a variable p1Element with the instruction:$(“<p>”), next with .text(“This is me”); we add the text required. On the second line, we are referring the new element to the element that we want to append, so we are giving the instruction to the id #headerText we are appending the p1Element.
+    </p>
+
+    <p>
+        This will be the result on the browser:
+    </p>
+    <p>
+        image Hello World  this is me, here
+    </p>
+
+    
 </body>
 </html>
