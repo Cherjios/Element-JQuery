@@ -22,7 +22,7 @@
             According to the website <a href="https://jquery.com/"> https://jquery.com </a> is a JavaScript library that makes it easier to manipulate HTML documents, use animation, and a much simple way to use Ajax to get data from APIs, so in other words simplify the way to write on JavaScript.
         </p>
         <p class="fs-4">
-            To create an element on an HTML document with jQuery we need the use the dollar symbol "$" to refer to the HTML element we want to create on our HTML file.
+            To create an element on an HTML document with jQuery we need the use the dollar symbol <code>"$"</code> to refer to the HTML element we want to create on our HTML file.
         </p>
         <p class="fs-4">
             For example, if you want to create a simple header <i  class="text-primary">“Hello world”</i> on your HTML document, you will use the  <code> &lt;h1&gt;</code> tag as fallow.
@@ -50,7 +50,7 @@
             <code>prepend().</code> Will add the element at the beginning.
         </p>
         <p class="fs-4">
-            For example: Let’s say we have a <code>&lt;div id="headerText"&gt;...&lt;/div&gt;</code> in our HTML file and we want to add the “Hello world” to our document.
+            For example: Let’s say we have a <code>&lt;div id="headerText"&gt;...&lt;/div&gt;</code> in our HTML file and we want to add the <i  class="text-primary">“Hello world”</i> to our document.
         </p>
 
         <p class="fs-4">
@@ -70,21 +70,24 @@
         </p>
         
         <p class="fs-4">
-        “Hello, World” and if we inspect the element in our console we will see as follow:
+            <i  class="text-primary">“Hello World”</i> and if we inspect the element in our console we will see as follow:
         </p>
         <p class="fs-4">
             image here
         </p>
 
         <p class="fs-4">
-            Now Let’s add a <code>&lt;p&gt;This is me </code> after <code>&lt;h1&gt;"Hello World"&lt;/h1&gt;</code>
+            Now Let’s add a <code>&lt;p&gt;This is me &lt;/p&gt; </code> after <code>&lt;h1&gt;...&lt;/h1&gt;</code>
         </p>
         <p class="fs-4">
             image code example header
         </p>
 
         <p class="fs-4">
-            In the first line, we are creating a variable <i class ="text-success"> p1Element </i>with the instruction: <code>$(“&lt;/p&gt;”)</code>, next with <code>.text(“This is me”);</code> we add the text required. On the second line, we are referring the new element to the element that we want to append, so we are giving the instruction to the id #headerText we are appending the p1Element.
+            In the first line, we are creating a variable <i class ="text-success"> p1Element </i>with the instruction:
+            <code>$(“&lt;p&gt;”)</code>, next with <code>.text(“This is me”);</code> we add the text required. 
+            On the second line, we are referring the new element to the element that we want to append, so we are giving the instruction
+            to the id <code>#headerText</code> we are appending the <i class ="text-success"> p1Element</i>.
         </p>
 
         <p class="fs-4">
@@ -100,34 +103,34 @@
             image of the code 
         </p>
         <p class="fs-4">
-            Now let’s create another paragraph with the text “Before this is me” prepended in id=”headerText”,
+            Now let’s create another paragraph with the text <i class="text-primary"> “Before this is me”</i> prepended in <code>id=”headerText”</code>
         </p>
 
         <p class="fs-4">
             image of code
         </p>
         <p class="fs-4">
-            Once again, in the first line, we are creating a variable <i class ="text-success"> p2Element </i>with the instruction:<code>$("&amp;lt;p&amp;gt;")</code> next with <code>.text(“Before this is me”); </code>we add the text required. 
-            On the second line, we are referring the new element to the element that we want to prepend, so we are giving the instruction to the id #headerText we are prepending the p2Element.
+            Once again, in the first line, we are creating a variable <i class ="text-success"> p2Element </i>with the instruction:<code>$("&lt;p&gt;")</code> next with <code>.text(“Before this is me”); </code>we add the text required. 
+            On the second line, we are referring the new element to the element that we want to prepend, so we are giving the instruction to the <code>id #headerText </code> we are prepending the <i class="text-success">p2Element</i>.
         </p>
         <p class="fs-4">
             This will be the result on the browser:
         </p>
         <p class="fs-4">
-            Before this is me Hello Wordl  this is me
+           Image from browser 
         </p>
         <p class="fs-4">
-            his will be our code reflected on an HTML file:
+            This will be our code reflected on an HTML file:
         </p>
         <p class="fs-4">
             image of code 
         </p>
 
         <p class="fs-4">
-            In this case “Before this is me” prepended on id=” HeaderText” after comes “Hello world” and at the end “This is me”.
+            In this case <i class="text-primary">“Before this is me” </i> prepended on <code>id=” HeaderText” </code>  after comes <i class="text-primary">““Hello world” </i> and at the end <i class="text-primary">“This is me”.</i>
         </p>
         <p class="fs-4">
-            n conclusion, we can create and add elements to our HTML file with jQuery in our JavaScript file only having the reference of one element on the HTML document.
+            In conclusion, we can create and add elements to our HTML file with jQuery in our JavaScript file only having the reference of one element on the HTML document.
         </p>
         <p class="fs-4">
             If this reading was helpful and you liked it, please follow me!
