@@ -12,7 +12,7 @@
         <h1>How to create an element on html with jQuery?</h1>
 
         <p class="fs-4">
-            Image here
+            <img src="./img/img-jquery.webp" class="img-fluid" alt="jQuery">
         </p>
 
         <p class="fs-4">
@@ -38,7 +38,6 @@
         </p>
         <p class="fs-4">
             <code>var h1Element = $("&lt;h1&gt;").text("Hello World");</code>
-
         </p>
         <p class="fs-4">
             Now that we have created this element, we need to append it to another element in the HTML document to be able to show it on the browser. To append it we can use the JavaScript method append() or prepend().
@@ -73,14 +72,16 @@
             <i  class="text-primary">“Hello World”</i> and if we inspect the element in our console we will see as follow:
         </p>
         <p class="fs-4">
-            image here
+            <img src="./img/text-code1.webp" class="img-fluid" alt="Code1">
         </p>
 
         <p class="fs-4">
             Now Let’s add a <code>&lt;p&gt;This is me &lt;/p&gt; </code> after <code>&lt;h1&gt;...&lt;/h1&gt;</code>
         </p>
-        <p class="fs-4">
-            image code example header
+        <p class="fs-4 p-3 mb-2 bg-dark text-white">
+            <code > var p1Element = $("&lt;p&gt;").text("This is me");<br>
+                $("#headerText").append(p1Element);
+            </code>
         </p>
 
         <p class="fs-4">
@@ -94,20 +95,23 @@
             This will be the result on the browser:
         </p>
         <p class="fs-4">
-            image Hello World  this is me, here
+            <img src="./img/img-hello-world.webp" class="img-fluid" alt="HelloWorld">
         </p>
         <p class="fs-4">
             This will be our code reflected on a HTML file:
         </p>
         <p class="fs-4">
-            image of the code 
+            <img src="./img/text-code2.webp" class="img-fluid" alt="Code2">
         </p>
         <p class="fs-4">
             Now let’s create another paragraph with the text <i class="text-primary"> “Before this is me”</i> prepended in <code>id=”headerText”</code>
         </p>
 
-        <p class="fs-4">
-            image of code
+        <p class="fs-4 p-3 mb-2 bg-dark text-white">
+            <code>
+                var p2Element = $("&lt;p&gt;").text("Before this is me");<br>
+                $("#headerText").prepend(p2Element);
+            </code>
         </p>
         <p class="fs-4">
             Once again, in the first line, we are creating a variable <i class ="text-success"> p2Element </i>with the instruction:<code>$("&lt;p&gt;")</code> next with <code>.text(“Before this is me”); </code>we add the text required. 
@@ -117,14 +121,20 @@
             This will be the result on the browser:
         </p>
         <p class="fs-4">
-           Image from browser 
+           <img src="./img/img-beforeme.webp" class="img-fluid" alt="beforeme">      
         </p>
         <p class="fs-4">
             This will be our code reflected on an HTML file:
         </p>
-        <p class="fs-4">
-            image of code 
-        </p>
+        <p class="fs-4 bg-dark" >
+            <code>
+                &lt;div id="headerText"&gt;<br>
+                &lt;p&gt; Before this is me &lt;/p&gt;<br>
+                &lt;h1&gt; Hello World &lt;/h1&gt<br>
+                &lt;p&gt; This is me &lt;/p&gt;<br>
+                &lt;/div&gt;
+            </code>
+          </p>
 
         <p class="fs-4">
             In this case <i class="text-primary">“Before this is me” </i> prepended on <code>id=” HeaderText” </code>  after comes <i class="text-primary">““Hello world” </i> and at the end <i class="text-primary">“This is me”.</i>
